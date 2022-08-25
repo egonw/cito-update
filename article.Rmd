@@ -1,8 +1,7 @@
 ---
-title: "A sample Research article title"
+title: "Two years of CiTO annotations"
 author:
-- Jane E. Doe [1,*,orcid:0000-0002-0778-8115]
-- John R.S. Smith [1,2,orcid:0000-0001-0002-0003]
+- Egon Willighagen [1,*,orcid:0000-0001-7542-0286]
 link-citations: yes
 output:
   html_document:
@@ -28,103 +27,117 @@ csl: journal-of-cheminformatics.csl
 
 
 * Correspondance:
-jane.e.doe@unifraneker.nl
+egon.willighagen@maastrichtuniversity.nl
 
 
 # Abstract
 
-**Background:** Text for this section. Research articles should include an abstract
-that does not exceed 350 words.
+Citations are an essential aspect of research communication and have become the basis of many
+metrics in the academic publishing world. Some see citation counts as a mark of scientific impact or
+even quality, but in reality the reasons for citing other work are manifold.
+Two years ago the *Journal of Cheminformatics* proposed a pilot for the adoption of annotating
+citations with their annotations. Basically, when you cite a source like a journal
+article or datasets, you also explain why specifically you cite that article. Particularly,
+the agreement and disagreement and reuse of methods and data is interesting.
+This article explores what happened after the launch of the pilot, gives examples of
+how people used the idea, and what needs to happen next.
 
-**Methods:** Text for this section.
+# Main text
 
-**Results:** Text for this section.
+Communiting new research findings is primarily done by written texts in the form of scholarly
+articles, books, and book chapters. To not having to repeat past research by themselves or others,
+authors cite research relevant [@agreesWith:citesAsAuthority:Shotton_2010]. However, the reasons why
+authors cite literature vary, which complicates how we use citations [@agreesWith:citesAsAuthority:Nicholson_2021]. 
+Typing citations is therefore of interest: it allows us to navigate ltierature more easily: it points
+us to essential research methods, data, and can warn us of research that cannot be reproduced,
+or others disagree with [@Nicholson_2021].
 
-**Keywords:** sample; article; author
+With the use of citations increasingly being picked up to help researchers with tools like
+scite.ai [@citesAsAuthority:Nicholson_2021] en Connected Papers, having typed
+citations will help us explore literature. Therefore, the *Journal of Cheminformatics*
+started a pilot for the adoption of annotating citations with their annotations [@discusses:Willighagen_2020].
 
-<!-- A graphical abstract can be supplied which, together with the article title,
-  should provide the reader with a visual description of the type of chemistry covered
-  in the article. The graphical abstract should be 920 x 300 pixels and a maximum of
-  150KB jpeg, png or svg file. -->
+# The Citation Typing Ontology Pilot
 
-# Introduction
+The pilot consists of a couple of components and the editorial explains some of them [@Willighagen_2020].
+The Citation Typing Ontology was selected to express the intention [@usesMethodIn:Shotton_2010],
+the intention is expressed a compact identifier wrapped in square brackets [@usesMethodIn:Wimalaratne_2018], and 
+the *bibnotes* concept of the Springer Nature publishing platform was used as carrier.
+Authors are guided by a landing page consisting of a BioMedCentral Collection at
+[https://www.biomedcentral.com/collections/cito](https://www.biomedcentral.com/collections/cito)
+and author guidelines explaining to authors
+how they can add the annotations with their favoriate editor at
+[https://jcheminform.github.io/jcheminform-author-guidelines/cito](https://jcheminform.github.io/jcheminform-author-guidelines/cito).
 
-This Markdown template is for a Research article in the *Journal of Cheminformatics*.
-It requires pandoc 2.12 or later to be converted to a Word .docx or PDF, with the 
-provided *Makefile*. See the [pandoc manual](http://pandoc.org/MANUAL.html) for more
-information on pandoc.
+Because the CiTO ontology has many terms for many different citation intentions,
+we made a selection of CiTO terms authors could use [@CiTOCollection]:
+**[cito:citesAsDatasource]** to indicate
+to a source the provides data to back up a claim, **[cito:usesDataFrom]** to indicate that the authors
+reused data, **[cito:usesMethodIn]** when a method or protocol explain in that source is used,
+and a few more general intentions like **[cito:discusses]**, **[cito:extends]**, **[cito:agreesWith]**,
+and **[cito:disagreesWith]**.
+The journal itself would adopt the following CiTO annotations: **[cito:retracts]**,
+**[cito:repliesTo]**, and **[updates]**. Fortunately, it has not been used yet, but
+the first would be used if an article with be retracted from the journal. The second
+would be used when an Letter to the Editor replies to an earlier published article,
+and **[cito:updates]** when an Correction was published. 
 
-# Methods
+## Wikidata and Scholia
 
-## Information about software and data
+To track the uptake but also to demonstrate the impact, we extended Scholia to visualize
+citation intention data. Scholia is a graphical interface around the data stored in
+Wikidata [@usesMethodIn:Nielsen_2017] and includes citations from OpenCitations [@Peroni_2020]
+and PubMed. Wikidata allows adding qualifier to statements which allowed us to define
+a data model for citations annoted with CiTO intention; the Wikidata property P3712
+has been used for this, labeled *objective of project or action* (see Figure 1).
 
-Reviewers and readers of a research paper must be able to use the used software and
-data to reach the same Results. *Journal of Cheminformatics* will only publish research
-or software that is entirely reproducible by third parties. This means that any
-datasets, software and algorithms that are required to reach the conclusions stated
-in the paper must be provided as supplemental materials, or be otherwise accessible
-without the need for registration, login or agreement with license terms other than
-Creative Commons licenses for data and text and OSI-approved Open Source Licenses
-for software. For any software, the source code must be provided
-[@agrees_with:Guha_Willighagen_2017].
+![](images/datamodel.png)
+**Figure 1**: Screenshot of the citation statements for an article where the
+*objective of project or action* qualifier is used to annotate the citation with their
+CiTO intentions.
 
-## Adding References
+This data in Wikidata can then be accessed via Scholia and Scholia tells use some
+overall statisticss of the number of annotations, which we reported on about a year
+ago too [@citesAsDataSource:Willighagen_2021]. Since last year and written down
+on August 25, the number of annotations and the number of annotated citations
+have almost doubled (from 377 to 603 and from 304 to 494, respectively). The first
+number is higher because one citation can have more than one citation intention.
+To continue, the current number of citations are citing 387 articles in 141 different
+scholarly journals, and they are found in 98 articles in 48 different journals
+(see Figure 2) [@citesAsDataSource:scholiaCiTOStatistics].
 
-References are added to the content in a similar way as LaTeX and there is a
-`bibliography.bib` in this folder in the BibTeX format. A citation is made
-by including an *\@* followed by the BibTeX key in square brackets, for example like
-*[\@Upper_writers_1974]* for Ref. [@Upper_writers_1974].
+![](images/scholiaStats.png)
+**Figure 2**: XXXX.
 
-Now, the *Journal of Cheminformatics* support citation typing ontology annotations
-using the CiTO @uses_method_in:Willighagen_2020. Adding an annoted citation
-is done by prepending the BibTeX key with the intention, e.g.
-*[\@agrees_with:Guha_Willighagen_2017]* or *[\@uses_method_in:Willighagen_2020]*.
+It must be noted that the *Journal of Cheminformatics* is only one possible source,
+but is still the only journal that uses CiTO annotation explicitly in the articles itself.
+And with 335 annotated citations in 32 articles it also is the major source of
+CiTO annotations in Wikidata at the time of writing.
+However, CiTO intention annotations in Wikidata can come from other sources too
+and be added both manually and automatically using the tools around Wikidata.
+When all annotation is combined, Scholia shows us that **[cito:citesAsAuthority]**
+is the most used intention, with 226 annotated citations (out of 603) in 38 articles.
+**[cito:usesMethodIn]** follows with 102 annotated citations.
 
-If you have more than one reference to cite, separate them with a semicolon,
-for example: *[\@Willighagen_2020; \@Guha_Willighagen_2017]*
-[@Willighagen_2020; @Guha_Willighagen_2017].
-If you have more than one intention to cite, separate them with a colon,
-for example: *[\@uses_method_in:extends:Willighagen_2020]*
-[@uses_method_in:extends:Willighagen_2020].
+## Adoption by *Journal of Cheminformatics* authors
 
-### Supported intentions
+XXXXX
 
-A full list of supported intentions can be found in the `filters/extract-cito.lua`
-file in the repository and [here online](https://github.com/jcheminform/markdown-jcheminf/blob/master/filters/extract-cito.lua).
-The journal allows all CiTO intention types to be used, and currently
-encourages the following:
+## Technological innovation
 
+Markdown template...
 
-* cito:citesAsDataSource
-* cito:usesDataFrom
-* cito:usesMethodIn
-* cito:citesAsAuthority
-* cito:discusses
-* cito:extends
-* cito:agreesWith
-* cito:disagreesWith
+To make life easier for authors, and following a Twitter discussion in Spring 2021, we developed a Markdown template with native CiTO support. Here, the author merely indicates the CiTO type when they cite the article.
 
-![](images/cito_in_Word.png)
-**Figure 1**: Reference list as converted into Word, including CiTO annotation.
+The manuscript can then easily be saved as a Word file to enable submission to the journal. The *Journal of Cheminformatics* template is available from our GitHub repository, and authors and editors should feel free to adapt it to their own journal needs.
 
-# Results
+## What is next?
 
-Figures are easy to add in Markdown, and can be done with the `![](images/cito_in_Word.png)`
-syntax.
-
-# Discussion
-
-In this section we examine the growth rate of the mean of $Z_0$, $Z_1$ and $Z_2$.
-And we can have LaTeX equations:
-
-$$
-x+1 = 2 
-$$
-
-# Conclusions
-
-# List of abbreviations
-
+With X articles published in the CiTO Collection, the adoption is not as high as one would have hoped.
+Nevertheless, the pilot is triggering interest with both authors and publishing platforms. The Scholia
+use case shows how the information can be used downstream. Further uptake of this idea of typed citations
+depends on the combined willingness of journal editors, authors, publishers and indexing services alike.
+The rise of services like scite.ai shows that the research community needs this kind of information.
 
 #### Availability of data and materials
 Text for this section.
@@ -139,10 +152,12 @@ Text for this section.
 Text for this section.
 
 #### Acknowledgements
-Text for this section.
 
-#### Authors' information (optional)
-Text for this section.
+This work would not be possible without the support from Springer Nature and
+Matthew Smyllie in particular and the editors of the *Journal of Cheminformatics*,
+Rajarshi Guha, Nina Jealizakova, and Barbara Zdrazil. XXX is thanked for
+integration the sections on CiTO use into the main Scholia journal aspects [REF].
+Huge thanks goes to YYY for developing the Markdown/Pandoc integration.
 
 
 
