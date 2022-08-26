@@ -135,13 +135,27 @@ is the most used intention, with 226 annotated citations (out of 603) in 38 arti
 |Research article|Empowering large chemical knowledge bases for exposomics: PubChemLite meets MetFrag [@citesForInformation:Schymanski2021]|cito:citesAsAuthority, cito:citesAsDataSource, cito:citesAsMetadataDocument, cito:discusses, cito:extends, cito:usesDataFrom, cito:usesMethodIn|100%|
 |Software|IDSM ChemWebRDF: SPARQLing small-molecule datasets [@citesForInformation:Galgonek2021]|cito:citesAsAuthority, cito:citesAsRelated, cito:usesDataFrom, cito:usesMethodIn|97%|
 |Letter to the Editor|FAIR chemical structures in the Journal of Cheminformatics [@citesForInformation:SchymanskiBolton2021]|cito:citesAsAuthority, cito:documents|100%|
-|Letter Response|Reply to “FAIR chemical structure in the Journal of Cheminformatics”|cito:agreesWith, cito:citesAsAuthority, cito:citesAsDataSource, cito:obtainsBackgroundFrom, cito:repliesTo| 100%|
+|Letter Response|Reply to “FAIR chemical structure in the Journal of Cheminformatics” [@citesForInformation:Guha2021b]|cito:agreesWith, cito:citesAsAuthority, cito:citesAsDataSource, cito:obtainsBackgroundFrom, cito:repliesTo| 100%|
+
+
+**Table 2**: *Journal of Cheminformatics* articles in the second year of the pilot. The * indicates that
+the percentage is based on CiTO intends different from cito:cites.
+
+|**Type**  |**Article** |**Intentions** | **%CiTO** |
+----- |------------ |------------ |---
+|Research article|DECIMER 1.0: deep learning for chemical image recognition using transformers [@citesForInformation:Rajan2021]|||
+|Research article|*DrugEx* v2: de novo design of drug molecules by Pareto-based multi-objective reinforcement learning in polypharmacology[@citesForInformation:Liu2021]|||
+|Database|PSnpBind: a database of mutated binding site protein–ligand complexes constructed using a multithreaded virtual screening workflow [@citesForInformation:Ammar2022]|||
+|Editorial|Diversifying cheminformatics [@citesForInformation:Zdrazil2022]|||
+|Data Note|DECIMER - hand-drawn molecule images dataset [@citesForInformation:Brinkhaus2022]|cito:agreesWith, cito:cites, cito:citesAsAuthority, cito:extends, cito:usesDataFrom, cito:usesMethodIn|41% (*)|
+
+[//]: <> (|Research article|European Registry of Materials: global, unique identifiers for (undisclosed) nanomaterials [@citesForInformation:vanRijn2022]||| --> THIRD YEAR!)
 
 ## Technological innovation
 
 Markdown template...
 
-To make life easier for authors, and following a Twitter discussion in Spring 2021, we developed a Markdown template with native CiTO support. Here, the author merely indicates the CiTO type when they cite the article.
+To make life easier for authors, and following a Twitter discussion in Spring 2021, we developed a Markdown template with native CiTO support. Here, the author merely indicates the CiTO type when they cite the article. This is using a method introduced by Krewinkel et al. [@usesMethodIn:Krewinkel2017].
 
 The manuscript can then easily be saved as a Word file to enable submission to the journal. The *Journal of Cheminformatics* template is available from our GitHub repository, and authors and editors should feel free to adapt it to their own journal needs.
 
@@ -175,9 +189,10 @@ Text for this section.
 
 This work would not be possible without the support from Springer Nature and
 Matthew Smyllie in particular and the editors of the *Journal of Cheminformatics*,
-Rajarshi Guha, Nina Jealizakova, and Barbara Zdrazil. XXX is thanked for
-integration the sections on CiTO use into the main Scholia journal aspects [REF].
-Huge thanks goes to YYY for developing the Markdown/Pandoc integration.
+Rajarshi Guha, Nina Jealizakova, and Barbara Zdrazil. Carlin MacKenzie is thanked for
+integration the sections on CiTO use into the main Scholia journal aspects [@citesAsEvidence:0af60cf7732bc8664d828cbe51f233aa63201df9].
+Huge thanks goes to Albert Krewinkel for developing the Markdown/Pandoc integration.
+Finally, thanks to all authors for including CiTO annotation in their articles.
 
 
 
