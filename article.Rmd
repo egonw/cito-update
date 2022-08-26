@@ -3,6 +3,7 @@ title: "Two years of CiTO annotations"
 author:
 - Egon Willighagen [1,*,orcid:0000-0001-7542-0286]
 link-citations: yes
+geometry: margin=2.5cm
 output:
   html_document:
     pandoc_args:
@@ -121,7 +122,12 @@ is the most used intention, with 226 annotated citations (out of 603) in 38 arti
 
 ## Adoption by *Journal of Cheminformatics* authors
 
-XXXXX
+|**Year** |**Type**  |**Article** |**Intentions** | **% Annotated citaions** |
+--- |----- |------------ |------------ |---
+|Year 1|Editorial|Adoption of the Citation Typing Ontology by the *Journal of Cheminformatics* [@citesForInformation:Willighagen_2020]|cito:citesAsAuthority, cito:citesForInformation, cito:usesMethodIn||
+||Methodology|Predicting target profiles with confidence as a service using docking scores [@citesForInformation:Ahmed2020]|cito:agreesWith, cito:extends, cito:citesAsAuthority, cito:citesAsDataSource, cito:usesMethodIn|
+||Research article|Too sweet: cheminformatics for deglycosylation in natural products [@citesForInformation:Schaub2020]|cito:citeAsAuthority, cito:citesForInformation, cito:usesDataFrom, cito:usesMethodIn||
+||Educational|A ligand-based computational drug repurposing pipeline using KNIME and Programmatic Data Access: case studies for rare diseases and COVID-19 [@citesForInformation:Tuerkova2020]|cito:agreesWith, cito:citesAsAuthority, cito:citesAsDataSource, cito:discusses, cito:usesDataFrom, cito:usesMethodIn||
 
 ## Technological innovation
 
