@@ -93,10 +93,9 @@ and PubMed. Wikidata allows adding qualifier to statements which allowed us to d
 a data model for citations annoted with CiTO intention; the Wikidata property P3712
 has been used for this, labeled *objective of project or action* (see Figure 1).
 
-![](images/datamodel.png)
-**Figure 1**: Screenshot of the citation statements for an article where the
+![Screenshot of the citation statements for an article where the
 *objective of project or action* qualifier is used to annotate the citation with their
-CiTO intentions.
+CiTO intentions.](images/datamodel.png)
 
 This data in Wikidata can then be accessed via Scholia and Scholia tells use some
 overall statisticss of the number of annotations, which we reported on about a year
@@ -108,8 +107,8 @@ To continue, the current number of citations are citing 387 articles in 141 diff
 scholarly journals, and they are found in 98 articles in 48 different journals
 (see Figure 2) [@citesAsDataSource:scholiaCiTOStatistics].
 
-![](images/scholiaStats.png)
-**Figure 2**: XXXX.
+![Screenshot of the Scholia Citation Typing Ontology page showing the
+daily statistics.](images/scholiaStats.png)
 
 It must be noted that the *Journal of Cheminformatics* is only one possible source,
 but is still the only journal that uses CiTO annotation explicitly in the articles itself.
