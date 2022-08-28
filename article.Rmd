@@ -1,5 +1,6 @@
 ---
 title: "Two years of CiTO annotations"
+subtitle: "Type: Correspondance"
 author:
 - Egon Willighagen [1,*,orcid:0000-0001-7542-0286]
 link-citations: yes
@@ -121,6 +122,23 @@ is the most used intention, with 226 annotated citations (out of 603) in 38 arti
 **[cito:usesMethodIn]** follows with 102 annotated citations.
 
 ## Adoption by *Journal of Cheminformatics* authors
+
+In the first two years after the start of the Pilot, including the seminal editorial [@extends:Willighagen_2020],
+the *Journal of Cheminformatics* has published fifteen articles with explicit CiTO annotation:
+three Editorials, four Research articles, two Database, and one of each of Data Note, Software,
+Letter to the Editor, Letter Response, Educational, and Methodology. Ten were published in
+the first year (Table 1) and five in the second year (Table 2). Each article annotated
+one or more citations with CiTO intentions, and several articles annotated every citation,
+far exceeding the original anticipation.
+
+Also exceeding expectations is the diversity of the chosen CiTO intention types. The original
+guidance focused on **[cito:citesAsDataSource]**, **[cito:usesDataFrom]** (the first is used
+to cite an article with data, the second when you reused data and citate the article where it
+comes from), **[cito:usesMethodIn]**, **[cito:citesAsAuthority]**, **[cito:discusses]**,
+**[cito:extends]**, **[cito:agreesWith]**, and **[cito:disagreesWith]**. Not only have
+all of these been used, authors also used **[cito:citesForInformation]**,
+**[cito:citesAsPotentialSolution]**, **[cito:citesAsRelated]**, **[cito:documents]**,
+and **[cito:obtainsBackgroundFrom]**.
 
 **Table 1**: *Journal of Cheminformatics* articles in the first year of the pilot.
 
