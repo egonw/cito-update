@@ -139,8 +139,6 @@ all of these been used, authors also used **[cito:citesForInformation]**,
 **[cito:citesAsPotentialSolution]**, **[cito:citesAsRelated]**, **[cito:documents]**,
 and **[cito:obtainsBackgroundFrom]**.
 
-**Table 1**: *Journal of Cheminformatics* articles in the first year of the pilot.
-
 |**Type**  |**Article** |**Intentions** | **%CiTO** |
 ----- |------------ |------------ |---
 |Editorial|Adoption of the Citation Typing Ontology by the *Journal of Cheminformatics* [@citesForInformation:Willighagen_2020]|cito:citesAsAuthority, cito:citesForInformation, cito:usesMethodIn|42%|
@@ -154,9 +152,8 @@ and **[cito:obtainsBackgroundFrom]**.
 |Letter to the Editor|FAIR chemical structures in the Journal of Cheminformatics [@citesForInformation:SchymanskiBolton2021]|cito:citesAsAuthority, cito:documents|100%|
 |Letter Response|Reply to “FAIR chemical structure in the Journal of Cheminformatics” [@citesForInformation:Guha2021b]|cito:agreesWith, cito:citesAsAuthority, cito:citesAsDataSource, cito:obtainsBackgroundFrom, cito:repliesTo| 100%|
 
+Table: *Journal of Cheminformatics* articles in the first year of the pilot.
 
-**Table 2**: *Journal of Cheminformatics* articles in the second year of the pilot. The * indicates that
-the percentage is based on CiTO intends different from cito:cites.
 
 |**Type**  |**Article** |**Intentions** | **%CiTO** |
 ----- |------------ |------------ |---
@@ -165,6 +162,9 @@ the percentage is based on CiTO intends different from cito:cites.
 |Database|PSnpBind: a database of mutated binding site protein–ligand complexes constructed using a multithreaded virtual screening workflow [@citesForInformation:Ammar2022]|cito:citesAsDataSource, cito:usesDataFrom, cito:usesMethodIn|23%|
 |Editorial|Diversifying cheminformatics [@citesForInformation:Zdrazil2022]|cito:citesAsAuthority, cito:citesAsEvidence, cito:citesForInformation, cito:citesAsRecommendedReading, cito:citesAsSourceDocument, cito:containsAssertionFrom|100%|
 |Data Note|DECIMER - hand-drawn molecule images dataset [@citesForInformation:Brinkhaus2022]|cito:agreesWith, cito:cites, cito:citesAsAuthority, cito:extends, cito:usesDataFrom, cito:usesMethodIn|41% (*)|
+
+Table: *Journal of Cheminformatics* articles in the second year of the pilot. The * indicates that
+the percentage is based on CiTO intends different from cito:cites.
 
 [//]: <> (|Research article|European Registry of Materials: global, unique identifiers for (undisclosed) nanomaterials [@citesForInformation:vanRijn2022]||| --> THIRD YEAR!)
 
