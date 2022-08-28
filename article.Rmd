@@ -54,7 +54,7 @@ us to essential research methods, data, and can warn us of research that cannot 
 or others disagree with [@Nicholson_2021].
 
 With the use of citations increasingly being picked up to help researchers with tools like
-scite.ai [@citesAsAuthority:Nicholson_2021] en Connected Papers, having typed
+scite.ai [@citesAsAuthority:Nicholson_2021] en Connected Papers [@citesAsAuthority:ConnectedPapers], having typed
 citations will help us explore literature. Therefore, the *Journal of Cheminformatics*
 started a pilot for the adoption of annotating citations with their annotations [@discusses:Willighagen_2020].
 
