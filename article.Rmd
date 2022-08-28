@@ -143,10 +143,10 @@ the percentage is based on CiTO intends different from cito:cites.
 
 |**Type**  |**Article** |**Intentions** | **%CiTO** |
 ----- |------------ |------------ |---
-|Research article|DECIMER 1.0: deep learning for chemical image recognition using transformers [@citesForInformation:Rajan2021]|||
-|Research article|*DrugEx* v2: de novo design of drug molecules by Pareto-based multi-objective reinforcement learning in polypharmacology[@citesForInformation:Liu2021]|||
-|Database|PSnpBind: a database of mutated binding site protein–ligand complexes constructed using a multithreaded virtual screening workflow [@citesForInformation:Ammar2022]|||
-|Editorial|Diversifying cheminformatics [@citesForInformation:Zdrazil2022]|||
+|Research article|DECIMER 1.0: deep learning for chemical image recognition using transformers [@citesForInformation:Rajan2021]|cito:agreesWith, cito:citesAsAuthority, cito:citesAsDataSource, cito:extends, cito:usesMethodIn|66% (*)|
+|Research article|*DrugEx* v2: de novo design of drug molecules by Pareto-based multi-objective reinforcement learning in polypharmacology[@citesForInformation:Liu2021]|cito:extends, cito:citesAsAuthority, cito:usesMethodIn|100%|
+|Database|PSnpBind: a database of mutated binding site protein–ligand complexes constructed using a multithreaded virtual screening workflow [@citesForInformation:Ammar2022]|cito:citesAsDataSource, cito:usesDataFrom, cito:usesMethodIn|23%|
+|Editorial|Diversifying cheminformatics [@citesForInformation:Zdrazil2022]|cito:citesAsAuthority, cito:citesAsEvidence, cito:citesForInformation, cito:citesAsRecommendedReading, cito:citesAsSourceDocument, cito:containsAssertionFrom|100%|
 |Data Note|DECIMER - hand-drawn molecule images dataset [@citesForInformation:Brinkhaus2022]|cito:agreesWith, cito:cites, cito:citesAsAuthority, cito:extends, cito:usesDataFrom, cito:usesMethodIn|41% (*)|
 
 [//]: <> (|Research article|European Registry of Materials: global, unique identifiers for (undisclosed) nanomaterials [@citesForInformation:vanRijn2022]||| --> THIRD YEAR!)
