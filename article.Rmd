@@ -35,14 +35,18 @@ egon.willighagen@maastrichtuniversity.nl
 # Abstract
 
 Citations are an essential aspect of research communication and have become the basis of many
-metrics in the academic publishing world. Some see citation counts as a mark of scientific impact or
-even quality, but in reality the reasons for citing other work are manifold.
-Two years ago the *Journal of Cheminformatics* proposed a pilot for the adoption of annotating
-citations with their annotations. Basically, when you cite a source like a journal
-article or datasets, you also explain why specifically you cite that article. Particularly,
-the agreement and disagreement and reuse of methods and data is interesting.
-This article explores what happened after the launch of the pilot, gives examples of
-how people used the idea, and what needs to happen next.
+metrics in the academic world. Some see citation counts as a mark of scientific impact or
+even quality, but in reality the reasons for citing other work are manifold which makes
+the interpretation more complicated than a single citation count can reflect.
+Two years ago, the *Journal of Cheminformatics* proposed the CiTO Pilot for the adoption of
+a practice of annotating citations with their citation intentions.
+Basically, when you cite a journal article or dataset (or any other soruce), you also explain
+why specifically you cite that source. Particularly,
+the agreement and disagreement and reuse of methods and data are of interest.
+This article explores what happened after the launch of the pilot. We summarize how
+authors in the *Journal of Cheminformatics* used the pilot, shows citation annotations
+are distributed with Wikidata, visualized with Scholia, discusses adoption outside BioMedCentral,
+and ponders about what needs to happen next.
 
 # Main text
 
@@ -86,7 +90,7 @@ the first would be used if an article with be retracted from the journal. The se
 would be used when an Letter to the Editor replies to an earlier published article,
 and **[cito:updates]** when an Correction was published. 
 
-## Wikidata and Scholia
+# Wikidata and Scholia
 
 To track the uptake but also to demonstrate the impact, we extended Scholia to visualize
 citation intention data. Scholia is a graphical interface around the data stored in
@@ -109,9 +113,6 @@ To continue, the current number of citations are citing 387 articles in 141 diff
 scholarly journals, and they are found in 98 articles in 48 different journals
 (see Figure 2) [@citesAsDataSource:scholiaCiTOStatistics].
 
-![Screenshot of the Scholia Citation Typing Ontology page showing the
-daily statistics.](images/scholiaStats.png)
-
 It must be noted that the *Journal of Cheminformatics* is only one possible source,
 but is still the only journal that uses CiTO annotation explicitly in the articles itself.
 And with 335 annotated citations in 32 articles it also is the major source of
@@ -122,7 +123,7 @@ When all annotation is combined, Scholia shows us that **[cito:citesAsAuthority]
 is the most used intention, with 226 annotated citations (out of 603) in 38 articles.
 **[cito:usesMethodIn]** follows with 102 annotated citations.
 
-## Adoption by *Journal of Cheminformatics* authors
+# Adoption by *Journal of Cheminformatics* authors
 
 In the first two years after the start of the Pilot, including the seminal editorial [@extends:Willighagen_2020],
 the *Journal of Cheminformatics* has published fifteen articles with explicit CiTO annotation:
@@ -131,6 +132,9 @@ Letter to the Editor, Letter Response, Educational, and Methodology. Ten were pu
 the first year (Table 1) and five in the second year (Table 2). Each article annotated
 one or more citations with CiTO intentions, and several articles annotated every citation,
 far exceeding the original anticipation.
+
+![Screenshot of the Scholia Citation Typing Ontology page showing the
+daily statistics.](images/scholiaStats.png)
 
 Also exceeding expectations is the diversity of the chosen CiTO intention types. The original
 guidance focused on **[cito:citesAsDataSource]**, **[cito:usesDataFrom]** (the first is used
@@ -168,7 +172,7 @@ Table: *Journal of Cheminformatics* articles in the first year of the pilot.
 Table: *Journal of Cheminformatics* articles in the second year of the pilot. The * indicates that
 the percentage is based on CiTO intends different from cito:cites.
 
-## Technological innovation
+# Technological innovation
 
 To make life easier for authors, and following a Twitter discussion in Spring 2021, a Markdown template was developed with native CiTO support: https://jcheminform.github.io/jcheminform-author-guidelines/cito-guidelines/markdown.html. Here, the author merely indicates the CiTO type when they cite the article. This is using a method introduced by Krewinkel et al. [@usesMethodIn:Krewinkel2017].
 The manuscript can then be converted to a Microsoft Word file with Pandoc (https://pandoc.org/) for submission to the journal.
@@ -177,7 +181,42 @@ The *Journal of Cheminformatics* template is available from the journal's GitHub
 preprint server also support CiTO annotations [@citesAsDataSource:Prins2021] and this template can be found at
 [https://github.com/biohackrxiv/publication-template](https://github.com/biohackrxiv/publication-template).
 
-## Discussion
+# Annotated Citation Networks
+
+We already use citation networks in finding relevant literature, for example based on co-citation patterns.
+Such analyses become stronger when we know more why articles cited. Similarly, an article that cites an
+article because it uses a method in second article and that method extends a method in a third articles,
+then the first article indirectly uses the method in that third article, even if that third article is
+not directly cited. This is reflecting in citation habits: authors always decide whether to cite all
+articles about a method, only the most recent, or only the oldest (or something else). After all, journals
+frequently have rules about the maximum length of reference sections. Moreover, some methods are
+so well established, we are not expected to cite that work at all.
+
+![Citation network consisting only of citations annotated with **[cito:usesMethodIn]**.
+Articles with explicit CiTO annotation are shown in red. The Wikidata SPARQL query
+used to create this diagram is available from
+[https://gist.github.com/egonw/1c8bc99373a24075838ee19976c74856](https://gist.github.com/egonw/1c8bc99373a24075838ee19976c74856).](images/usesMethodInNetwork.png)
+
+The general availability of open citation allows us to recover such more complex reuse scenarios
+using the citation networks. Moreover, when the citations are annotated, we can zoom in on reuse
+networks. Figure 3 shows a method reuse network for articles with explicit annotation in red. The
+network shows a few article that use methods in two cited articles, e.g. *Kohulan Rajan, 2021*
+and *Henning Otto Brinkhaus, 2022* [@Rajan2021,@Brinkhaus2022]. Of course, if we do not limit
+the network to a subset of articles (here, *Journal of Cheminformatics* articles with CiTO
+annotation), the network becomes more interesting, but also much more complex. Network analysis
+approaches can then be used instead of network visualization.
+
+When we combined the reuse of methods and data, we can for journals summarize which articles
+are most reused. Analyses like this becomes a simple query that can be routinely performed for
+any journal. Figure 4 shows a tabular summary of articles of which methods or data is reused.
+Like citation counts, this data depends totally on explicit citation data. However, these
+citation counts are based on actual reuse and not also on the number of citations as authority.
+
+![Screenshot of the "Most reused articles" section of the Scholia page for the
+*Journal of Cheminformatics*. Based on CiTO annotation available in Wikdiata, the ten
+most reused articles are shown.](images/mostUsedInJCheminf.png)
+
+# Discussion
 
 Because many publishing platforms currently do not support display of citation level intention annotation,
 the default model only provides the annotation in the bibliography. The choice was made to use the `bibnotes`
@@ -198,7 +237,7 @@ only if a manuscript-level Bib(La)TeX file is used the CiTO annotation can be ad
 BiBTeX file. This is explained in this guidance document:
 [https://jcheminform.github.io/jcheminform-author-guidelines/cito-guidelines/latex.html](https://jcheminform.github.io/jcheminform-author-guidelines/cito-guidelines/latex.html).
 
-## What is next?
+# What is next?
 
 With fourteen articles published in the CiTO Collection, the adoption is not as high as one would have hoped.
 Nevertheless, the pilot is triggering interest with both authors and publishing platforms. The
