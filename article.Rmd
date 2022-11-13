@@ -209,7 +209,14 @@ by BioHackrXiv is a nice example of adoption beyond BioMedCentral.
 The Scholia
 use case shows how the information can be used downstream. Further uptake of this idea of typed citations
 depends on the combined willingness of journal editors, authors, publishers and indexing services alike.
-The rise of services like scite.ai shows that the research community needs this kind of information.
+The rise of services like scite.ai shows that the research community is ready this kind of information.
+Logical steps include support of distributing citation typing annotation via platforms like CrossRef
+or EuropePMC.
+
+Because all innovation requires a critical amount of adoption to be accepted, additional sources of
+CiTO annotation will be welcome. For example, providing CiTO annotation via nanopublications would
+allow collections of annotations to be shared. Then, when archived on Zenodo and therefore citatble,
+these annotations can be included in analysis as a trusted or at least citable source.
 
 ### Availability of data and materials
 
