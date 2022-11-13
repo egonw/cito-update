@@ -1,0 +1,24 @@
+
+Dear editor,
+
+please find enclosed my write up of "Two years of explicit CiTO annotations".
+
+This article explores what happened after the launch of the pilot. It summarizes how
+authors in the *Journal of Cheminformatics* used the pilot, shows citation annotations
+are distributed with Wikidata, visualized with Scholia, discusses adoption outside BMC,
+and ponders about what needs to happen next.
+
+While adoption goes slowly, the uptake is now beyond the Journal of Cheminformatics
+and in active use on preprint servers, including ResearchSquare, ChemRxiv, and
+BioHackrXiv. And noting that CiTO has not gone unnoticed with the German company
+Bayer indicates this is no longer merely an academic exercise.
+
+The paper has been under development at https://github.com/egonw/cito-update and
+I will have the submission system upload it to ResearchSquare.
+
+The article is submitted as a Correspondence and I do not have funding to cover
+the APC.
+
+With kind regards,
+
+Egon
