@@ -97,7 +97,8 @@ citation intention data. Scholia is a graphical interface around the data stored
 Wikidata [@usesMethodIn:Nielsen_2017] and includes citations from OpenCitations [@Peroni_2020]
 and PubMed. Wikidata allows adding qualifier to statements which allowed us to define
 a data model for citations annotated with CiTO intention; the Wikidata property P3712
-has been used for this, labeled *objective of project or action* (see Figure 1).
+has been used for this, labeled *objective of project or action* (see Figure 1;
+this property was relabeled in November 2022 as *has goal*).
 
 ![Screenshot of the citation statements for an article where the
 *objective of project or action* qualifier is used to annotate the citation with their
