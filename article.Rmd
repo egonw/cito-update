@@ -102,7 +102,7 @@ this property was relabeled in November 2022 as *has goal*).
 
 ![Screenshot of the citation statements for an article where the
 *objective of project or action* qualifier is used to annotate the citation with their
-CiTO intentions.](images/datamodel.png)
+CiTO intentions.](images/figure1.png)
 
 This data in Wikidata can then be accessed via Scholia and Scholia tells use some
 overall statistics of the number of annotations, which we reported on about a year
@@ -135,7 +135,7 @@ one or more citations with CiTO intentions, and several articles annotated every
 far exceeding the original anticipation.
 
 ![Screenshot of the Scholia Citation Typing Ontology page showing the
-daily statistics.](images/scholiaStats.png)
+daily statistics.](images/figure2.png)
 
 Also exceeding expectations is the diversity of the chosen CiTO intention types. The original
 guidance focused on **[cito:citesAsDataSource]**, **[cito:usesDataFrom]** (the first is used
@@ -196,7 +196,7 @@ so well established, we are not expected to cite that work at all.
 ![Citation network consisting only of citations annotated with **[cito:usesMethodIn]**.
 Articles with explicit CiTO annotation are shown in red. The Wikidata SPARQL query
 used to create this diagram is available from
-[https://gist.github.com/egonw/1c8bc99373a24075838ee19976c74856](https://gist.github.com/egonw/1c8bc99373a24075838ee19976c74856).](images/usesMethodInNetwork.png)
+[https://gist.github.com/egonw/1c8bc99373a24075838ee19976c74856](https://gist.github.com/egonw/1c8bc99373a24075838ee19976c74856).](images/figure3.png)
 
 The general availability of open citation allows us to recover such more complex reuse scenarios
 using the citation networks. Moreover, when the citations are annotated, we can zoom in on reuse
@@ -215,7 +215,7 @@ citation counts are based on actual reuse and not also on the number of citation
 
 ![Screenshot of the "Most reused articles" section of the Scholia page for the
 *Journal of Cheminformatics*. Based on CiTO annotation available in Wikidata, the ten
-most reused articles are shown.](images/mostUsedInJCheminf.png)
+most reused articles are shown.](images/figure4.png)
 
 # Discussion
 
