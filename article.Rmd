@@ -45,7 +45,7 @@ why specifically you cite that source. Particularly,
 the agreement and disagreement and reuse of methods and data are of interest.
 This article explores what happened after the launch of the pilot. We summarize how
 authors in the *Journal of Cheminformatics* used the pilot, shows citation annotations
-are distributed with Wikidata, visualized with Scholia, discusses adoption outside BioMedCentral,
+are distributed with Wikidata, visualized with Scholia, discusses adoption outside BMC,
 and ponders about what needs to happen next.
 
 # Main text
@@ -71,7 +71,7 @@ the intention is expressed a compact identifier wrapped in square brackets, also
 safe CURIE, standard proposed by the W3C in 2010 [@usesMethodIn:McCarron2010,@usesMethodIn:Wimalaratne_2018].
 The *cito* prefix is registered in BioRegistry [@usesDataFrom:Hoyt2022].
 The *bibnotes* concept of the Springer Nature publishing platform was used as carrier.
-Authors are guided by a landing page consisting of a BioMedCentral Collection at
+Authors are guided by a landing page consisting of a BMC Collection at
 [https://www.biomedcentral.com/collections/cito](https://www.biomedcentral.com/collections/cito)
 and author guidelines explaining to authors
 how they can add the annotations with their favorite editor at
@@ -244,7 +244,7 @@ With fourteen articles published in the CiTO Collection, the adoption is not as 
 Nevertheless, the pilot is triggering interest with both authors and publishing platforms. The
 *Journal of Cheminformatics* has already published a few more articles with CiTO annotation and
 a search on the preprint servers ResearchSquare and ChemRxiv show a few more manuscripts. The support
-by BioHackrXiv is a nice example of adoption beyond BioMedCentral.
+by BioHackrXiv is a nice example of adoption beyond BMC.
 
 The Scholia
 use case shows how the information can be used downstream. Further uptake of this idea of typed citations
