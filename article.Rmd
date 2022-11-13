@@ -171,14 +171,16 @@ the percentage is based on CiTO intends different from cito:cites.
 To make life easier for authors, and following a Twitter discussion in Spring 2021, a Markdown template was developed with native CiTO support: https://jcheminform.github.io/jcheminform-author-guidelines/cito-guidelines/markdown.html. Here, the author merely indicates the CiTO type when they cite the article. This is using a method introduced by Krewinkel et al. [@usesMethodIn:Krewinkel2017].
 The manuscript can then be converted to a Microsoft Word file with Pandoc (https://pandoc.org/) for submission to the journal.
 
-The *Journal of Cheminformatics* template is available from the journal's GitHub organization, and authors and editors should feel free to adapt it to the needs of other journals. The BioHackrXiv (https://biohackrxiv.org/) preprint server also support CiTO annotations [@cito:citesAsDataSource:Prins2021] and this template can be found at https://github.com/biohackrxiv/publication-template.
+The *Journal of Cheminformatics* template is available from the journal's GitHub organization, and authors and editors should feel free to adapt it to the needs of other journals. The BioHackrXiv ([https://biohackrxiv.org/](https://biohackrxiv.org/))
+preprint server also support CiTO annotations [@citesAsDataSource:Prins2021] and this template can be found at
+[https://github.com/biohackrxiv/publication-template](https://github.com/biohackrxiv/publication-template).
 
 ## Discussion
 
 Because many publishing platforms currently do not support display of citation level intention annotation,
 the default model only provides the annotation in the bibliography. The choice was made to use the `bibnotes`
 idea which allows giving additional notes to a reference in the bibliography. The CiTO Pilot uses
-the *safe CURIE* standard proposed by the W3C in 2010 [@usesMethodIn:BirBeck2010]. The Markdown templates
+the *safe CURIE* standard proposed by the W3C in 2010 [@usesMethodIn:McCarron2010]. The Markdown templates
 implement this idea. However, typesetting in the *Journal of Cheminformatics* has shown to be inconsisten,
 even within single articles, suggesting additional training or guidance could be needed.
 
@@ -192,7 +194,8 @@ is to add the CiTO annotation after completion of the Word document, directly to
 
 LaTeX users may find them in a situation between that of Markdown users and reference manager users:
 only if a manuscript-level Bib(La)TeX file is used the CiTO annotation can be added as notes to the
-BiBTeX file. This is explained in this guidance document: https://jcheminform.github.io/jcheminform-author-guidelines/cito-guidelines/latex.html.
+BiBTeX file. This is explained in this guidance document:
+[https://jcheminform.github.io/jcheminform-author-guidelines/cito-guidelines/latex.html](https://jcheminform.github.io/jcheminform-author-guidelines/cito-guidelines/latex.html).
 
 ## What is next?
 
@@ -207,22 +210,27 @@ use case shows how the information can be used downstream. Further uptake of thi
 depends on the combined willingness of journal editors, authors, publishers and indexing services alike.
 The rise of services like scite.ai shows that the research community needs this kind of information.
 
-#### Availability of data and materials
+### Availability of data and materials
+
 CiTO annotation in the *Journal of Cheminformatics* are available from the journal's articles. CiTO
 annotation data in Scholia is available from [Wikidata](https://wikidata.org/). Markdown templates that
-support CiTO are available from https://github.com/jcheminform/markdown-jcheminf and
-https://github.com/biohackrxiv/publication-template.
+support CiTO are available from
+[https://github.com/jcheminform/markdown-jcheminf](https://github.com/jcheminform/markdown-jcheminf) and
+[https://github.com/biohackrxiv/publication-template](https://github.com/biohackrxiv/publication-template).
 
-#### Competing interests
-Text for this section.
+### Competing interests
 
-#### Funding
+No competing interests.
+
+### Funding
+
 Part of this work was supported by ELIXIR, the research infrastructure for life-science data.
 
-#### Authors' contributions
-Text for this section.
+### Authors' contributions
 
-#### Acknowledgements
+Not applicable.
+
+### Acknowledgments
 
 This work would not be possible without the support from Springer Nature and
 Matthew Smyllie in particular and the editors of the *Journal of Cheminformatics*,
