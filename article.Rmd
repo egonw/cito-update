@@ -69,7 +69,7 @@ The pilot consists of a couple of components and the editorial explains some of 
 The Citation Typing Ontology was selected to express the intention [@usesMethodIn:Shotton_2010],
 the intention is expressed a compact identifier wrapped in square brackets, also called a
 safe CURIE, standard proposed by the W3C in 2010 [@usesMethodIn:McCarron2010,@usesMethodIn:Wimalaratne_2018].
-The *cito* prefix is registered in BioRegistry [@usesDataFrom:Hoyt2022].
+The *cito* prefix is registered in Bioregistry [@usesDataFrom:Hoyt2022].
 The *bibnotes* concept of the Springer Nature publishing platform was used as carrier.
 Authors are guided by a landing page consisting of a BMC Collection at
 [https://www.biomedcentral.com/collections/cito](https://www.biomedcentral.com/collections/cito)
