@@ -1,6 +1,6 @@
 ---
-title: "Two years of CiTO annotations"
-subtitle: "Type: Correspondance"
+title: "Two years of explicit CiTO annotations"
+subtitle: "Type: Correspondence"
 author:
 - Egon Willighagen [1,*,orcid:0000-0001-7542-0286]
 link-citations: yes
@@ -28,7 +28,7 @@ csl: journal-of-cheminformatics.csl
 ...
 
 
-* Correspondance:
+* Correspondence:
 egon.willighagen@maastrichtuniversity.nl
 
 
@@ -40,7 +40,7 @@ even quality, but in reality the reasons for citing other work are manifold whic
 the interpretation more complicated than a single citation count can reflect.
 Two years ago, the *Journal of Cheminformatics* proposed the CiTO Pilot for the adoption of
 a practice of annotating citations with their citation intentions.
-Basically, when you cite a journal article or dataset (or any other soruce), you also explain
+Basically, when you cite a journal article or dataset (or any other source), you also explain
 why specifically you cite that source. Particularly,
 the agreement and disagreement and reuse of methods and data are of interest.
 This article explores what happened after the launch of the pilot. We summarize how
@@ -50,11 +50,11 @@ and ponders about what needs to happen next.
 
 # Main text
 
-Communiting new research findings is primarily done by written texts in the form of scholarly
+Communicating new research findings is primarily done by written texts in the form of scholarly
 articles, books, and book chapters. To not having to repeat past research by themselves or others,
 authors cite research relevant [@agreesWith:citesAsAuthority:Shotton_2010]. However, the reasons why
 authors cite literature vary, which complicates how we use citations [@agreesWith:citesAsAuthority:Nicholson_2021]. 
-Typing citations is therefore of interest: it allows us to navigate ltierature more easily: it points
+Typing citations is therefore of interest: it allows us to navigate literature more easily: it points
 us to essential research methods, data, and can warn us of research that cannot be reproduced,
 or others disagree with [@Nicholson_2021].
 
@@ -74,7 +74,7 @@ The *bibnotes* concept of the Springer Nature publishing platform was used as ca
 Authors are guided by a landing page consisting of a BioMedCentral Collection at
 [https://www.biomedcentral.com/collections/cito](https://www.biomedcentral.com/collections/cito)
 and author guidelines explaining to authors
-how they can add the annotations with their favoriate editor at
+how they can add the annotations with their favorite editor at
 [https://jcheminform.github.io/jcheminform-author-guidelines/cito](https://jcheminform.github.io/jcheminform-author-guidelines/cito).
 
 Because the CiTO ontology has many terms for many different citation intentions,
@@ -96,7 +96,7 @@ To track the uptake but also to demonstrate the impact, we extended Scholia to v
 citation intention data. Scholia is a graphical interface around the data stored in
 Wikidata [@usesMethodIn:Nielsen_2017] and includes citations from OpenCitations [@Peroni_2020]
 and PubMed. Wikidata allows adding qualifier to statements which allowed us to define
-a data model for citations annoted with CiTO intention; the Wikidata property P3712
+a data model for citations annotated with CiTO intention; the Wikidata property P3712
 has been used for this, labeled *objective of project or action* (see Figure 1).
 
 ![Screenshot of the citation statements for an article where the
@@ -104,7 +104,7 @@ has been used for this, labeled *objective of project or action* (see Figure 1).
 CiTO intentions.](images/datamodel.png)
 
 This data in Wikidata can then be accessed via Scholia and Scholia tells use some
-overall statisticss of the number of annotations, which we reported on about a year
+overall statistics of the number of annotations, which we reported on about a year
 ago too [@citesAsDataSource:Willighagen_2021]. Since last year and written down
 on August 25, the number of annotations and the number of annotated citations
 have almost doubled (from 377 to 603 and from 304 to 494, respectively). The first
@@ -138,7 +138,7 @@ daily statistics.](images/scholiaStats.png)
 
 Also exceeding expectations is the diversity of the chosen CiTO intention types. The original
 guidance focused on **[cito:citesAsDataSource]**, **[cito:usesDataFrom]** (the first is used
-to cite an article with data, the second when you reused data and citate the article where it
+to cite an article with data, the second when you reused data and cite the article where it
 comes from), **[cito:usesMethodIn]**, **[cito:citesAsAuthority]**, **[cito:discusses]**,
 **[cito:extends]**, **[cito:agreesWith]**, and **[cito:disagreesWith]**. Not only have
 all of these been used, authors also used **[cito:citesForInformation]**,
@@ -213,7 +213,7 @@ Like citation counts, this data depends totally on explicit citation data. Howev
 citation counts are based on actual reuse and not also on the number of citations as authority.
 
 ![Screenshot of the "Most reused articles" section of the Scholia page for the
-*Journal of Cheminformatics*. Based on CiTO annotation available in Wikdiata, the ten
+*Journal of Cheminformatics*. Based on CiTO annotation available in Wikidata, the ten
 most reused articles are shown.](images/mostUsedInJCheminf.png)
 
 # Discussion
@@ -242,7 +242,7 @@ BiBTeX file. This is explained in this guidance document:
 With fourteen articles published in the CiTO Collection, the adoption is not as high as one would have hoped.
 Nevertheless, the pilot is triggering interest with both authors and publishing platforms. The
 *Journal of Cheminformatics* has already published a few more articles with CiTO annotation and
-a search on the preprint servers ResearchSquare and ChemrXiv show a few more manuscripts. The support
+a search on the preprint servers ResearchSquare and ChemRxiv show a few more manuscripts. The support
 by BioHackrXiv is a nice example of adoption beyond BioMedCentral.
 
 The Scholia
@@ -254,7 +254,7 @@ or EuropePMC.
 
 Because all innovation requires a critical amount of adoption to be accepted, additional sources of
 CiTO annotation will be welcome. For example, providing CiTO annotation via nanopublications would
-allow collections of annotations to be shared. Then, when archived on Zenodo and therefore citatble,
+allow collections of annotations to be shared. Then, when archived on Zenodo and therefore citable,
 these annotations can be included in analysis as a trusted or at least citable source.
 
 ### Availability of data and materials
@@ -281,7 +281,7 @@ Not applicable.
 
 This work would not be possible without the support from Springer Nature and
 Matthew Smyllie in particular and the editors of the *Journal of Cheminformatics*,
-Rajarshi Guha, Nina Jealizakova, and Barbara Zdrazil. Carlin MacKenzie is thanked for
+Rajarshi Guha, Nina Jeliazkova, and Barbara Zdrazil. Carlin MacKenzie is thanked for
 integration the sections on CiTO use into the main Scholia journal aspects [@citesAsEvidence:0af60cf7732bc8664d828cbe51f233aa63201df9].
 Huge thanks goes to Albert Krewinkel for developing the Markdown/Pandoc integration.
 Finally, thanks to all authors for including CiTO annotation in their articles.
