@@ -222,8 +222,8 @@ most reused articles are shown.](images/figure4.png)
 Because many publishing platforms currently do not support display of citation level intention annotation,
 the default model only provides the annotation in the bibliography. The choice was made to use the `bibnotes`
 idea which allows giving additional notes to a reference in the bibliography. The CiTO Pilot uses
-the *safe CURIE* standard, but the typesetting in the *Journal of Cheminformatics* has shown to be inconsistent,
-even within single articles, suggesting additional training or guidance may be needed.
+the *safe CURIE* standard, compatible with the typesetting in the *Journal of Cheminformatics*.
+This makes is easier to text mine the annotations by downstream tools.
 
 This links to a limitation to the current use of CiTO annotation: the citation-level annotation may be
 supported by some authoring systems (Markdown), even then the depiction may not be supported. If we convert
