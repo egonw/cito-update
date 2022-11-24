@@ -31,6 +31,7 @@ csl: journal-of-cheminformatics.csl
 * Correspondence:
 egon.willighagen@maastrichtuniversity.nl
 
+Copyright (c) Egon Willighagen; CC-BY 4.0 International; DOI: https://doi.org/10.5281/zenodo.7357547
 
 # Abstract
 
