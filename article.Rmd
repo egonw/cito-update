@@ -278,14 +278,6 @@ Part of this work was supported by ELIXIR, the research infrastructure for life-
 
 Not applicable.
 
-### Ethics approval and consent to participate
-
-Not applicable.
-
-### Consent for publication
-
-Not applicable.
-
 ### Acknowledgments
 
 This work would not be possible without the support from Springer Nature and
