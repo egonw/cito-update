@@ -41,6 +41,8 @@ local properties_and_aliases = {
     'metadata_document',
     'metadata'
   },
+  citesAsPotentialSolution = {
+  },
   citesAsRecommendedReading = {
     'asRecommendedReading',
     'recommendedReading',
