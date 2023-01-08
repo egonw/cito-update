@@ -53,25 +53,25 @@ and ponders about what needs to happen next.
 
 Communicating new research findings is still primarily done by written texts in the form of scholarly
 articles, books, and book chapters. To not having to repeat past research by themselves or others,
-authors cite relevant research [@agreesWith:citesAsAuthority:Shotton_2010]. However, the reasons why
-authors cite literature vary, which complicates how we use citations [@agreesWith:citesAsAuthority:Nicholson_2021]. 
+authors cite relevant research&nbsp;[@agreesWith:citesAsAuthority:Shotton_2010]. However, the reasons why
+authors cite literature vary, which complicates how we use citations&nbsp;[@agreesWith:citesAsAuthority:Nicholson_2021]. 
 Typing citations is therefore of interest: it allows us to navigate literature more easily: it points
 us to essential research methods, data, and can warn us of research that cannot be reproduced,
-or others disagree with [@Nicholson_2021]. Indeed, it helps us understand the history of science
-[@obtainsBackgroundFrom:Park2023].
+or others disagree with&nbsp;[@Nicholson_2021]. Indeed, it helps us understand the history of
+science&nbsp;[@obtainsBackgroundFrom:Park2023].
 
 With the use of citations increasingly being picked up to help researchers with tools like
-scite.ai [@citesAsAuthority:Nicholson_2021] en Connected Papers [@citesAsAuthority:ConnectedPapers], having typed
+scite.ai&nbsp;[@citesAsAuthority:Nicholson_2021] en Connected Papers&nbsp;[@citesAsAuthority:ConnectedPapers], having typed
 citations will help us explore literature. Therefore, the *Journal of Cheminformatics*
-started a pilot for the adoption of annotating citations with their annotations [@discusses:Willighagen_2020].
+started a pilot for the adoption of annotating citations with their annotations&nbsp;[@discusses:Willighagen_2020].
 
 # The Citation Typing Ontology Pilot
 
-The pilot consisted of a couple of components and the editorial explains some of them [@Willighagen_2020].
-The Citation Typing Ontology was selected to express the intention [@usesMethodIn:Shotton_2010],
+The pilot consisted of a couple of components and the editorial explains some of them&nbsp;[@Willighagen_2020].
+The Citation Typing Ontology was selected to express the intention&nbsp;[@usesMethodIn:Shotton_2010],
 the intention is expressed a compact identifier wrapped in square brackets, also called a
-safe CURIE, standard proposed by the W3C in 2010 [@usesMethodIn:McCarron2010;@usesMethodIn:Wimalaratne_2018].
-The *cito* prefix is registered in Bioregistry [@usesDataFrom:Hoyt2022].
+safe CURIE, standard proposed by the W3C in 2010&nbsp;[@usesMethodIn:McCarron2010;@usesMethodIn:Wimalaratne_2018].
+The *cito* prefix is registered in Bioregistry&nbsp;[@usesDataFrom:Hoyt2022].
 The *bibnotes* concept of the Springer Nature publishing platform was used as carrier.
 Authors are guided by a landing page consisting of a BMC Collection at
 [https://www.biomedcentral.com/collections/cito](https://www.biomedcentral.com/collections/cito)
@@ -80,7 +80,7 @@ how they can add the annotations with their favorite editor at
 [https://jcheminform.github.io/jcheminform-author-guidelines/cito](https://jcheminform.github.io/jcheminform-author-guidelines/cito).
 
 Because the CiTO ontology has many terms for many different citation intentions,
-we made a selection of CiTO terms authors could use [@CiTOCollection]:
+we made a selection of CiTO terms authors could use&nbsp;[@CiTOCollection]:
 **[cito:citesAsDatasource]** to indicate
 to a source the provides data to back up a claim, **[cito:usesDataFrom]** to indicate that the authors
 reused data, **[cito:usesMethodIn]** when a method or protocol explain in that source is used,
@@ -96,10 +96,10 @@ and **[cito:updates]** when an Correction was published.
 
 To track the uptake but also to demonstrate the impact, we extended Scholia to visualize
 citation intention data. Scholia is a graphical interface around the data stored in
-Wikidata [@usesMethodIn:Nielsen_2017] and includes citations from OpenCitations [@Peroni_2020]
+Wikidata&nbsp;[@usesMethodIn:Nielsen_2017] and includes citations from OpenCitations&nbsp;[@Peroni_2020]
 and PubMed. Wikidata allows adding qualifier to statements which allowed us to define
 a data model for citations annotated with CiTO intention; the Wikidata property P3712
-has been used for this, labeled *objective of project or action* (see Figure 1;
+has been used for this, labeled *objective of project or action* (see Figure&nbsp;1;
 this property was relabeled in November 2022 as *has goal*).
 
 ![Screenshot of the citation statements for an article where the
@@ -109,13 +109,13 @@ CiTO intentions.](images/figure1.png)
 This data in Wikidata can then be accessed in multiple ways, including REST APIs and
 an SPARQL interface. The latter is used by Scholia to tell us some
 overall statistics of the number of annotations, which we reported on about a year
-ago too [@citesAsDataSource:Willighagen_2021]. Since last year and recorded
+ago too&nbsp;[@citesAsDataSource:Willighagen_2021]. Since last year and recorded
 on August 25 2022, the number of annotations and the number of annotated citations
 have almost doubled (from 377 to 603 and from 304 to 494, respectively). The first
 number is higher because one citation can have more than one citation intention.
 To continue, the current number of citations are citing 387 articles in 141 different
 scholarly journals, and they are found in 98 articles in 48 different journals
-(see Figure 2) [@citesAsDataSource:scholiaCiTOStatistics].
+(see Figure&nbsp;2)&nbsp;[@citesAsDataSource:scholiaCiTOStatistics].
 
 It must be noted that the *Journal of Cheminformatics* is only one possible source
 of CiTO annotations. As far as the author knows, it is still the only journal that uses
@@ -134,7 +134,7 @@ In the two years of the Pilot, including the seminal editorial [@extends:Willigh
 the *Journal of Cheminformatics* published fifteen articles with explicit CiTO annotation:
 three Editorials, four Research articles, two Database, and one of each of Data Note, Software,
 Letter to the Editor, Letter Response, Educational, and Methodology. Ten were published in
-the first year (Table 1) and five in the second year (Table 2). Each article annotated
+the first year (Table&nbsp;1) and five in the second year (Table&nbsp;2). Each article annotated
 one or more citations with CiTO intentions, and several articles annotated every citation,
 far exceeding the original anticipation.
 
@@ -208,7 +208,7 @@ used to create this diagram is available from
 
 The general availability of open citation allows us to recover such more complex reuse scenarios
 using the citation networks. Moreover, when the citations are annotated, we can zoom in on reuse
-networks. Figure 3 shows a method reuse network for articles with explicit annotation in red. The
+networks. Figure&nbsp;3 shows a method reuse network for articles with explicit annotation in red. The
 network shows a few article that use methods in two cited articles, e.g. *Kohulan Rajan, 2021*
 and *Henning Otto Brinkhaus, 2022* [@Rajan2021;@Brinkhaus2022]. Of course, if we do not limit
 the network to a subset of articles (here, *Journal of Cheminformatics* articles with CiTO
@@ -217,7 +217,7 @@ approaches can then be used instead of network visualization.
 
 When we combined the reuse of methods and data, we can for journals summarize which articles
 are most reused. Analyses like this becomes a simple query that can be routinely performed for
-any journal. Figure 4 shows a tabular summary of articles of which methods or data is reused.
+any journal. Figure&nbsp;4 shows a tabular summary of articles of which methods or data is reused.
 Like citation counts, this data depends totally on explicit citation data. However, these
 citation counts are based on actual reuse and not also on the number of citations as authority.
 
@@ -249,7 +249,7 @@ different annotations. This approach is explained in this guidance document:
 [https://jcheminform.github.io/jcheminform-author-guidelines/cito-guidelines/latex.html](https://jcheminform.github.io/jcheminform-author-guidelines/cito-guidelines/latex.html).
 
 From a use case perspective, it is easy to see how this kind of annotation can be used. For example,
-we here showed examples of reuse of work. via **[[cito:usesMethodIn]** and **[cito:usesDataFrom]**.
+we here showed examples of reuse of work, via **[cito:usesMethodIn]** and **[cito:usesDataFrom]**.
 Second, scite.ai is a clear use case of **[cito:agreesWith]** and **[cito:disagreesWith]** annotation,
 though it makes an good case how such citation intentions can be extracted with text mining instead.
 However, other use cases still need development and adoption, which brings us to the question:
@@ -304,7 +304,7 @@ Not applicable.
 This work would not be possible without the support from Springer Nature and
 Matthew Smyllie in particular and the editors of the *Journal of Cheminformatics*,
 Rajarshi Guha, Nina Jeliazkova, and Barbara Zdrazil. Carlin MacKenzie is thanked for
-integration the sections on CiTO use into the main Scholia journal aspects [@citesAsEvidence:0af60cf7732bc8664d828cbe51f233aa63201df9].
+integration the sections on CiTO use into the main Scholia journal aspects&nbsp;[@citesAsEvidence:0af60cf7732bc8664d828cbe51f233aa63201df9].
 Huge thanks goes to Albert Krewinkel for developing the Markdown/Pandoc integration.
 Finally, thanks to all authors for including CiTO annotation in their articles.
 
