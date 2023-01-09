@@ -36,7 +36,7 @@ Copyright (c) Egon Willighagen; CC-BY 4.0 International
 # Abstract
 
 Citations are an essential aspect of research communication and have become the basis of many
-metrics in the academic world. Some see citation counts as a mark of scientific impact or
+evaluation metrics in the academic world. Some see citation counts as a mark of scientific impact or
 even quality, but in reality the reasons for citing other work are manifold which makes
 the interpretation more complicated than a single citation count can reflect.
 Two years ago, the *Journal of Cheminformatics* proposed the CiTO Pilot for the adoption of
@@ -47,7 +47,7 @@ the agreement and disagreement and reuse of methods and data are of interest.
 This article explores what happened after the launch of the pilot. We summarize how
 authors in the *Journal of Cheminformatics* used the pilot, shows citation annotations
 are distributed with Wikidata, visualized with Scholia, discusses adoption outside BMC,
-and ponders about what needs to happen next.
+and finally present some thoughts on what needs to happen next.
 
 # Main text
 
@@ -63,7 +63,7 @@ science&nbsp;[@obtainsBackgroundFrom:Park2023].
 With the use of citations increasingly being picked up to help researchers with tools like
 scite.ai&nbsp;[@citesAsAuthority:Nicholson_2021] en Connected Papers&nbsp;[@citesAsAuthority:ConnectedPapers], having typed
 citations will help us explore literature. Therefore, the *Journal of Cheminformatics*
-started a pilot for the adoption of annotating citations with their annotations&nbsp;[@discusses:Willighagen_2020].
+started a pilot to explore capturing the intent of citations using annotations&nbsp;[@discusses:Willighagen_2020].
 
 # The Citation Typing Ontology Pilot
 
@@ -128,7 +128,7 @@ When all annotation is combined, Scholia shows us that **[cito:citesAsAuthority]
 is the most used intention, with 226 annotated citations (out of 603) in 38 articles.
 **[cito:usesMethodIn]** follows with 102 annotated citations.
 
-# Adoption by *Journal of Cheminformatics* authors
+# Adoption by *Journal of Cheminformatics* Authors
 
 In the two years of the Pilot, including the seminal editorial [@extends:Willighagen_2020],
 the *Journal of Cheminformatics* published fifteen articles with explicit CiTO annotation:
@@ -177,13 +177,13 @@ Table: *Journal of Cheminformatics* articles in the first year of the pilot.
 Table: *Journal of Cheminformatics* articles in the second year of the pilot. The * indicates that
 the percentage is based on CiTO intends different from cito:cites.
 
-# Technological innovation
+# Technological Innovation
 
 To make life easier for authors, and following a Twitter discussion in Spring 2021, a Markdown template was developed with native CiTO support:
 [https://jcheminform.github.io/jcheminform-author-guidelines/cito-guidelines/markdown.html](https://jcheminform.github.io/jcheminform-author-guidelines/cito-guidelines/markdown.html).
 Here, the author indicates the CiTO type when they cite the article. This is using a method introduced by Krewinkel et al. [@usesMethodIn:Krewinkel2017].
 The manuscript can then be converted to a Microsoft Word file with Pandoc ([https://pandoc.org/](https://pandoc.org/)) for submission to the journal. For publishers it will be interesting to note that the Pandoc can be directly converted in
-the *journal article tag suite* (JATS) format [@citesForInformation:Beck2011;@citesAsPotentialSolution:krewinkel2022jats].
+the *Journal Article Tag Suite* (JATS) format [@citesForInformation:Beck2011;@citesAsPotentialSolution:krewinkel2022jats].
 
 The *Journal of Cheminformatics* template is available from the journal's GitHub organization, and authors and editors
 should feel free to adapt it to the needs of other journals. The BioHackrXiv ([https://biohackrxiv.org/](https://biohackrxiv.org/))
@@ -255,7 +255,7 @@ though it makes an good case how such citation intentions can be extracted with 
 However, other use cases still need development and adoption, which brings us to the question:
 what is next?
 
-# What is next?
+# What is Next?
 
 With fifteen articles published in the CiTO Collection, the pilot triggered interest from authors.
 The *Journal of Cheminformatics* has already published a few more articles with CiTO annotation
