@@ -82,22 +82,22 @@ how they can add the annotations with their favorite editor at
 Because the CiTO ontology has many terms for many different citation intentions,
 we made a selection of CiTO terms authors could use&nbsp;[@CiTOCollection]:
 **[cito:citesAsDatasource]** to indicate
-to a source the provides data to back up a claim, **[cito:usesDataFrom]** to indicate that the authors
-reused data, **[cito:usesMethodIn]** when a method or protocol explain in that source is used,
+a source that provides data to back up a claim, **[cito:usesDataFrom]** to indicate that the authors
+reused data, **[cito:usesMethodIn]** when a method or protocol explained in that source is used,
 and a few more general intentions like **[cito:discusses]**, **[cito:extends]**, **[cito:agreesWith]**,
 and **[cito:disagreesWith]**.
 The journal itself would adopt the following CiTO annotations: **[cito:retracts]**,
 **[cito:repliesTo]**, and **[cito:updates]**. Fortunately, it has not been used yet, but
-the first would be used if an article with be retracted from the journal. The second
-would be used when an Letter to the Editor replies to an earlier published article,
-and **[cito:updates]** when an Correction was published. 
+the first would be used if an article was retracted from the journal. The second
+would be used when a Letter to the Editor replies to an earlier published article,
+and **[cito:updates]** when a Correction was published. 
 
 # Wikidata and Scholia
 
 To track the uptake but also to demonstrate the impact, we extended Scholia to visualize
 citation intention data. Scholia is a graphical interface around the data stored in
 Wikidata&nbsp;[@usesMethodIn:Nielsen_2017] and includes citations from OpenCitations&nbsp;[@Peroni_2020]
-and PubMed. Wikidata allows adding qualifier to statements which allowed us to define
+and PubMed. Wikidata allows adding qualifiers to statements which allowed us to define
 a data model for citations annotated with CiTO intention; the Wikidata property P3712
 has been used for this, labeled *objective of project or action* (see Figure&nbsp;1;
 this property was relabeled in November 2022 as *has goal*).
@@ -107,7 +107,7 @@ this property was relabeled in November 2022 as *has goal*).
 CiTO intentions.](images/figure1.png)
 
 This data in Wikidata can then be accessed in multiple ways, including REST APIs and
-an SPARQL interface. The latter is used by Scholia to tell us some
+a SPARQL interface. The latter is used by Scholia to tell us some
 overall statistics of the number of annotations, which we reported on about a year
 ago too&nbsp;[@citesAsDataSource:Willighagen_2021]. Since last year and recorded
 on August 25 2022, the number of annotations and the number of annotated citations
@@ -196,7 +196,7 @@ We already use citation networks in finding relevant literature, for example bas
 Such analyses become stronger when we know more why articles cited. Similarly, an article that cites an
 article because it uses a method in second article and that method extends a method in a third articles,
 then the first article indirectly uses the method in that third article, even if that third article is
-not directly cited. This is reflecting in citation habits: authors always decide whether to cite all
+not directly cited. This is reflecting citation habits: authors always decide whether to cite all
 articles about a method, only the most recent, or only the oldest (or something else). After all, journals
 frequently have rules about the maximum length of reference sections. Moreover, some methods are
 so well established, we are not expected to cite that work at all.
@@ -215,8 +215,8 @@ the network to a subset of articles (here, *Journal of Cheminformatics* articles
 annotation), the network becomes more interesting, but also much more complex. Network analysis
 approaches can then be used instead of network visualization.
 
-When we combined the reuse of methods and data, we can for journals summarize which articles
-are most reused. Analyses like this becomes a simple query that can be routinely performed for
+When we combine the reuse of methods and data, we can for journals summarize which articles
+are most reused. Analyses like this become a simple query that can be routinely performed for
 any journal. Figure&nbsp;4 shows a tabular summary of articles of which methods or data is reused.
 Like citation counts, this data depends totally on explicit citation data. However, these
 citation counts are based on actual reuse and not also on the number of citations as authority.
@@ -251,7 +251,7 @@ different annotations. This approach is explained in this guidance document:
 From a use case perspective, it is easy to see how this kind of annotation can be used. For example,
 we here showed examples of reuse of work, via **[cito:usesMethodIn]** and **[cito:usesDataFrom]**.
 Second, scite.ai is a clear use case of **[cito:agreesWith]** and **[cito:disagreesWith]** annotation,
-though it makes an good case how such citation intentions can be extracted with text mining instead.
+though it makes a good case how such citation intentions can be extracted with text mining instead.
 However, other use cases still need development and adoption, which brings us to the question:
 what is next?
 
@@ -267,13 +267,12 @@ the citation network to retracted COVID-19 articles [@citesAsRecommendedReading:
 
 Further uptake of this idea of typed citations
 depends on the combined willingness of journal editors, authors, publishers and indexing services alike.
-The rise of services like scite.ai shows that the research community is ready this kind of information.
-Logical steps include support of distributing citation typing annotation via platforms like PlumX,
-Altmetric.com, CrossRef, or EuropePMC. Support of CiTO annotation in the JATS format seems an
-important step forward.
+The rise of services like scite.ai shows that the research community is ready for this kind of information.
+Logical steps forward include support of distributing citation typing annotation via platforms like PlumX,
+Altmetric.com, CrossRef, or EuropePMC, and support of CiTO annotation in the JATS format.
 
 Because all innovation requires a critical amount of adoption to be accepted, additional sources of
-CiTO annotation will be welcome. For example, providing CiTO annotations via a standardized format
+CiTO annotation will be welcomed. For example, providing CiTO annotations via a standardized format
 like a spreadsheet-like format or nanopublications would allow collections of annotations to be shared,
 such as that by Duca *et al.*. Then, when archived on Zenodo and therefore citable,
 these annotations can be included in analysis as a trusted or at least citable source.
